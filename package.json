@@ -1,0 +1,36 @@
+{
+  "name": "mediasoup-client-utils",
+  "version": "0.1.0",
+  "description": "Mediasoup client utils",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "scripts": {
+    "build": "tsc && tsc -p tsconfig.esm.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woody146/mediasoup-client-utils.git"
+  },
+  "keywords": [
+    "mediasoup",
+    "meidasoup-client",
+    "ts"
+  ],
+  "author": "woody146",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/woody146/mediasoup-client-utils/issues"
+  },
+  "homepage": "https://github.com/woody146/mediasoup-client-utils#readme",
+  "dependencies": {
+    "mediasoup-client": "^3.6.89"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "typescript": "^5.1.5"
+  },
+  "files": [
+    "dist"
+  ]
+}
