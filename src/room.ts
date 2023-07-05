@@ -12,7 +12,16 @@ export class ClientRoom {
   onNewProducer: Array<(producer: types.Producer) => void> = [];
   onNewConsumer: Array<(consumer: types.Consumer) => void> = [];
 
-  constructor(public roomId: string) {}
+  constructor(
+    /**
+     * Room id
+     */
+    public roomId: string,
+    /**
+     * Router for consumer
+     */
+    public routerId: string
+  ) {}
 
   async initDevice(data: Parameters<Device['load']>[0]) {
     await this.device.load(data);
